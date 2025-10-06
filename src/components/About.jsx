@@ -1,6 +1,7 @@
 import React from 'react'
 import { Typewriter } from 'react-simple-typewriter';
 import Me from "../assets/Me.jpg";
+import profile from "../assets/profile.png";
 import Tilt from 'react-parallax-tilt';
 
 
@@ -56,7 +57,7 @@ scale={1.05}
 transitionSpeed={1000}
 gyroscope={true}
 >
-<img src={Me} alt='Koshal' className='w-80 h-80 rounded-full object-cover mb-4 drop-shadow-[0_10px_20px_rgba(255,0,255,0.5)] border border-fuchsia-600'/>
+<img src={profile} alt='Koshal' className='w-80 h-80 rounded-full object-cover mb-4 drop-shadow-[0_10px_20px_rgba(255,0,255,0.5)] border border-fuchsia-600'/>
 </Tilt>
 </div>
  </div>

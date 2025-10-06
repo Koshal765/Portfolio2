@@ -70,7 +70,7 @@ const Navbar = () => {
               <FaLinkedin size={24} />
             </a>
           </div>
-          <div className='md:hidden'>
+          <div className='md:hidden backdrop-blur-2xl z-50'>
             {
               isMenuOpen ? (
                 <FiX className='text-3xl text-fuchsia-500 cursor-pointer' onClick={() => setIsMenuOpen(false)} />
@@ -86,7 +86,7 @@ const Navbar = () => {
         </div>
         { /* Mobile Menu */}
         {isMenuOpen && (
-          <div className='absolute top-16 left-1/2 transform -translate-x-1/2 w-4/5  bg-opacity-50 backdrop-filter backdrop-blur-lg z-50 border border-gray-700 rounded-b-2xl shadow-lg shadow-fuchsia-500/50 '>
+          <div className='absolute top-16 left-1/2 transform -translate-x-1/2 w-4/5 bg-opacity-75 backdrop-filter backdrop-blur-xl  z-50 border border-gray-700 rounded-b-2xl shadow-lg shadow-fuchsia-500/50 '>
             <ul className='flex flex-col  items-center space-y-4 text-gray-300 py-4 '>
               {menuItems.map((item) => (
                 <li key={item.id} className={`cursor-pointer hover:text-white ${active === item.id ? "text-fuchsia-700" : ""}`}>
