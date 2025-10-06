@@ -1,5 +1,5 @@
 import React from 'react'
-import { Typewriter } from 'react-simple-typewriter'
+import { Typewriter } from 'react-simple-typewriter';
 import Me from "../assets/Me.jpg";
 import Tilt from 'react-parallax-tilt';
 
