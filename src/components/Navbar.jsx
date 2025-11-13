@@ -39,7 +39,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className={`navbar fixed top-0 w-full z-50  bg-transparent rounded-b-2xl shadow-xl/30 shadow-fuchsia-500/50 px-[7vw] md:px-[7vw] lg:px-[20vw] } ${isScrolled ? 'backdrop-blur-md bg-black/30 border-b border-gray-700' : 'bg-transparent'}`}>
+      <nav className={`navbar fixed top-0 w-full z-50  bg-transparent rounded-b-2xl shadow-xl/30 shadow-fuchsia-500/50 px-[7vw] md:px-[7vw] lg:px-[20vw] } ${isScrolled ? 'backdrop-blur-lg bg-black/30 border-b border-gray-700' : 'bg-transparent'}`}>
         <div className='  flex justify-around items-center py-5 text-white'>
           <div className='text-xl font-semibold cursor-pointer '>
             <span className='text-fuchsia-700'>&lt;</span>
@@ -86,7 +86,7 @@ const Navbar = () => {
         </div>
         { /* Mobile Menu */}
         {isMenuOpen && (
-          <div className='absolute top-16 left-1/2 transform -translate-x-1/2 w-4/5 bg-opacity-75 backdrop-filter backdrop-blur-xl  z-50 border border-gray-700 rounded-b-2xl shadow-lg shadow-fuchsia-500/50 '>
+          <div className='absolute top-16 left-1/2 transform -translate-x-1/2 w-4/5 bg-opacity-50  backdrop-filter backdrop-blur-2xl  z-50 border border-gray-700 rounded-b-2xl shadow-lg shadow-fuchsia-500/50 '>
             <ul className='flex flex-col  items-center space-y-4 text-gray-300 py-4 '>
               {menuItems.map((item) => (
                 <li key={item.id} className={`cursor-pointer hover:text-white ${active === item.id ? "text-fuchsia-700" : ""}`}>

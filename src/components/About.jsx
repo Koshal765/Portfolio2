@@ -31,7 +31,7 @@ className='py-4 px-[7vw] md:px-[7vw] lg:px-[20vw] font-sans mt-16 md:mt-24 lh:my
         />
     </span>
 </h3>
-<p className='text-gray-400  text-base sm:text-lg md:text-lg leading-relaxed mb-10 mt-8'>
+<p className='text-gray-400  text-base sm:text-sm md:text-sm leading-relaxed mb-10 mt-8'>
     I’m a fresher web developer passionate about building clean and interactive user interfaces.
             I enjoy working with React.js and JavaScript to create  responsive web applications and love turning ideas into real projects.
             I’m eager to learn, grow, and contribute to exciting opportunities in frontend development."
