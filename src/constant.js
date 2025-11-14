@@ -36,8 +36,8 @@ import Appt from './assets/Projects/Appt.png';
 import ShayariSagar from './assets/Projects/ShayariSagar.png';
 import Curr from './assets/Projects/Curr.png';
 
-import itvedant from 'src/assets/education/itvedant.png';
-import rtmnu from 'src/assets/education/rtmnu.jpeg';
+import itvedant from './assets/education/itvedant.png';
+import rtmnu from './assets/education/rtmnu.jpeg';
 
 
 export const SkillsInfo = [
