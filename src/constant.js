@@ -36,8 +36,8 @@ import Appt from './assets/Projects/Appt.png';
 import ShayariSagar from './assets/Projects/ShayariSagar.png';
 import Curr from './assets/Projects/Curr.png';
 
-import ItVedant from './assets/education/itvedant.png';
-import Rtmnu from './assets/education/rtmnu.jpeg';
+import itVedant from './assets/education/itvedant.png';
+import rtmnu from './assets/education/rtmnu.jpeg';
 
 
 export const SkillsInfo = [
@@ -129,7 +129,7 @@ export const ProjectsInfo = [
 export const EducationInfo = [
   {
     id: 0,
-    img :ItVedant,
+    img :itVedant,
     school:'ItVedant Java Full-Stack Web development',
     date:'May 2025-Jan 2026',
     desc:'I have completed this full-stack web development course from ItVedant where I learned various technologies like HTML, CSS, JavaScript, ReactJS, NodeJS, ExpressJS, MongoDB, etc.'
@@ -137,7 +137,7 @@ export const EducationInfo = [
   },
     {
     id: 1,
-    img :Rtmnu,
+    img :rtmnu,
     school:'Rashtrasant Tukadoji Maharaj Nagpur University',
     date:'Aug 2022- May 2025',
     desc:'Completed my  Bachelor of  Science(CS) from RTMNU with a first-class grade.'
