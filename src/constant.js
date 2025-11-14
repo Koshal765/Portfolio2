@@ -32,9 +32,9 @@ import vercelLogo from './assets/tech_logo/vercel.png';
 // import postgreLogo from './assets/tech_logo/postgre.png';
 // import csharpLogo from './assets/tech_logo/csharp.png';
 
-import Appt from './assets/projects/Appt.png';
+import Appt from './assets/Projects/Appt.png';
 import ShayariSagar from './assets/Projects/ShayariSagar.png';
-import Curr from './assets/projects/Curr.png';
+import Curr from './assets/Projects/Curr.png';
 
 import ItVedant from './assets/education/itvedant.png';
 import Rtmnu from './assets/education/rtmnu.jpeg';
