@@ -32,7 +32,7 @@ import vercelLogo from './assets/tech_logo/vercel.png';
 // import postgreLogo from './assets/tech_logo/postgre.png';
 // import csharpLogo from './assets/tech_logo/csharp.png';
 
-import Appt1 from './assets/projects/Appt.PNG';
+import Appt from './assets/projects/Appt.png';
 import Shayari from './assets/Projects/ShayariSagar.png';
 import Curr from './assets/projects/CurrerncyConverter.png';
 
@@ -100,7 +100,7 @@ export const ProjectsInfo = [
     id:0,
     name: 'Appointment Scheduler',
     description: 'A web application that allows users to schedule and manage appointments efficiently with features like calendar integration and email reminders.',
-    image: Appt1,
+    image: Appt,
     githubLink: 'https://github.com/Koshal765/appointment',
     liveLink: 'https://appointment-jet.vercel.app/',
     technologies: ['React JS', 'Tailwind', 'localStorage'],
