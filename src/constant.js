@@ -33,8 +33,8 @@ import vercelLogo from './assets/tech_logo/vercel.png';
 // import csharpLogo from './assets/tech_logo/csharp.png';
 
 import Appt from './assets/projects/Appt.png';
-import Shayari from './assets/Projects/ShayariSagar.png';
-import Curr from './assets/projects/CurrerncyConverter.png';
+import ShayariSagar from './assets/Projects/ShayariSagar.png';
+import Curr from './assets/projects/Curr.png';
 
 import ItVedant from './assets/education/itvedant.png';
 import Rtmnu from './assets/education/rtmnu.jpeg';
@@ -109,7 +109,7 @@ export const ProjectsInfo = [
         id:1,
     name: 'Shyayri Sagar',
     description: 'A poetry website that offers a vast collection of Shayari in various categories, allowing users to read, share, and express their emotions through words.',
-    image: Shayari,
+    image: ShayariSagar,
     githubLink: 'https://github.com/Koshal765/Shayari-Sagar',
     liveLink: 'https://shayari-sagar.vercel.app/',
     technologies: ['HTML', 'CSS', 'JavaScript', 'API'],
