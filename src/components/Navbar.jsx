@@ -25,7 +25,12 @@ const Navbar = () => {
   const handlleMenuItemClick = (sectionid) => {
     setActive(sectionid);
     setIsMenuOpen(false);
-  }
+
+    const section = document.getElementById(sectionid);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   const menuItems = [
     {
@@ -63,7 +68,7 @@ const Navbar = () => {
               <FaGithub size={24} />
             </a>
 
-            <a href="https://github.com/Koshal765"
+            <a href="https://www.linkedin.com/in/koshal-pothare-b63806388/"
               target='_blank'
               rel=' noopener noreferrer'
               className='text-gray-300 hover:text-fuchsia-800 duration-300 text-2xl'>

@@ -4,6 +4,7 @@ import './App.css'
 import Navbar from './components/Navbar.jsx'
 import About from './components/About.jsx'
 import Skills from './components/Skills.jsx'
+import Projects from './components/Projects.jsx'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Navbar />
       <About />
       <Skills/>
+      <Projects />
    </div>
     </>
   )
