@@ -36,8 +36,8 @@ import Appt from './assets/Projects/Appt.png';
 import ShayariSagar from './assets/Projects/ShayariSagar.png';
 import Curr from './assets/Projects/Curr.png';
 
-import itvedant from 'src/assets/education/itvedant.png';
-import rtmnu from 'src/assets/education/rtmnu.jpeg';
+import itvedant from './assets/education/itvedant.png';
+import rtmnu from './assets/education/rtmnu.jpeg';
 
 
 export const SkillsInfo = [
@@ -120,7 +120,7 @@ export const ProjectsInfo = [
     description: 'A web application that enables users to convert currencies in real-time, providing accurate exchange rates and a user-friendly interface for seamless transactions.',
     image: Curr,
     githubLink: 'https://github.com/Koshal765/currency-Converter',
-    liveLink: 'https://currency-converter-psi.vercel.app/',
+    liveLink: 'https://currency-converter-lilac-beta.vercel.app/',
     technologies: ['HTML', 'CSS', 'JavaScript', 'API'],
     },
 
