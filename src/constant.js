@@ -38,6 +38,8 @@ import Curr from './assets/Projects/Curr.png';
 
 import itvedant from './assets/education/itvedant.png';
 import rtmnu from './assets/education/rtmnu.jpeg';
+import Gcps from './assets/education/Gcps.jpg'
+import Newenglish from './assets/education/Newenglish.jpeg'
 
 
 export const SkillsInfo = [
@@ -130,6 +132,7 @@ export const EducationInfo = [
   {
     id: 0,
     img :itvedant,
+    degree:'Java Full-Stack Web development',
     school:'ItVedant Java Full-Stack Web development',
     date:'May 2025-Jan 2026',
     desc:'I have completed this full-stack web development course from ItVedant where I learned various technologies like HTML, CSS, JavaScript, ReactJS, NodeJS, ExpressJS, MongoDB, etc.'
@@ -138,9 +141,26 @@ export const EducationInfo = [
     {
     id: 1,
     img :rtmnu,
+    degree:'B.Sc(CS)',
     school:'Rashtrasant Tukadoji Maharaj Nagpur University',
     date:'Aug 2022- May 2025',
     desc:'Completed my  Bachelor of  Science(CS) from RTMNU with a first-class grade.'
+    },
+    {
+     id:2,
+     img:Newenglish,
+     degree:" (XII)-PCM with IT",
+     school:'New English High School',
+     date:'2020-2022',
+     desc:'Completed 12th(IT) from New English Collage. A well known Collage from Wardha.'
+    },
+    {
+      id:3,
+      img:Gcps,
+      degree:'X-(CBSE)',
+      school:'Gandhi City Public School',
+      date:'Passed in year 2020',
+      desc:'Completed my 10th(CBSE Board) from this school.'
     }
 ];
 
