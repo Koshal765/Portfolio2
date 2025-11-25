@@ -35,6 +35,7 @@ import vercelLogo from './assets/tech_logo/vercel.png';
 import Appt from './assets/Projects/Appt.png';
 import ShayariSagar from './assets/Projects/ShayariSagar.png';
 import Curr from './assets/Projects/Curr.png';
+import WSB from  './assets/Projects/WSB.png';
 
 import itvedant from './assets/education/itvedant.png';
 import rtmnu from './assets/education/rtmnu.jpeg';
@@ -108,7 +109,17 @@ export const ProjectsInfo = [
     technologies: ['React JS', 'Tailwind', 'localStorage'],
     },
     {
-        id:1,
+       id:1,
+    name: 'WildSprout Beauty',
+    description: 'WildSprout Beauty is a modern skincare website showcasing a curated range of natural products, including face packs, toners, and lip balms. The platform highlights each product with elegant visuals and essential details, offering users a smooth and engaging browsing experience.',
+    image: WSB,
+    githubLink: 'https://github.com/Koshal765/WidSprout-Beauty',
+    liveLink: 'https://wild-sprout-beauty.vercel.app/',
+    technologies: ['React JS', 'Tailwind', 'Mock API' ],
+    },
+
+    {
+        id:2,
     name: 'Shyayri Sagar',
     description: 'A poetry website that offers a vast collection of Shayari in various categories, allowing users to read, share, and express their emotions through words.',
     image: ShayariSagar,
@@ -117,7 +128,7 @@ export const ProjectsInfo = [
     technologies: ['HTML', 'CSS', 'JavaScript', 'API'],
     },
     {
-        id:2,
+        id:3,
     name: 'Currency Converter',
     description: 'A web application that enables users to convert currencies in real-time, providing accurate exchange rates and a user-friendly interface for seamless transactions.',
     image: Curr,
@@ -125,6 +136,7 @@ export const ProjectsInfo = [
     liveLink: 'https://currency-converter-lilac-beta.vercel.app/',
     technologies: ['HTML', 'CSS', 'JavaScript', 'API'],
     },
+    
 
 ]
 
