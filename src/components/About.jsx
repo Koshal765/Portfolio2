@@ -39,7 +39,7 @@ className='py-4 px-[7vw] md:px-[7vw] lg:px-[20vw] font-sans mt-16 md:mt-24 lh:my
 </p>
 {/* resume button */}
 <a
-href='https://drive.google.com/file/d/1210C45cQF3IoilE-RfdGB4EfznV10iGV/view?usp=sharing'
+href='https://drive.google.com/file/d/1a_5vlCOeVZ4u-HC8V5EIDEsLIBCP4hPz/view?usp=drive_link'
 target='_blank'
 rel='noopener noreferrer'
 className='inline-block bg-fuchsia-700 text-white font-semibold px-6 py-3 rounded-lg shadow-lg hover:bg-fuchsia-800 transition-colors duration-300'>
