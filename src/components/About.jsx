@@ -3,6 +3,7 @@ import { Typewriter } from 'react-simple-typewriter';
 import Me from "../assets/Me.jpg";
 import profile from "../assets/profile.png";
 import Tilt from 'react-parallax-tilt';
+import Me2 from "../assets/Me2.jpeg";
 
 
 const About = () => {
@@ -39,7 +40,7 @@ className='py-4 px-[7vw] md:px-[7vw] lg:px-[20vw] font-sans mt-16 md:mt-24 lh:my
 </p>
 {/* resume button */}
 <a
-href='https://drive.google.com/file/d/1jvx80tKtqp5yamapEfgZx_jxLPQfk7qT/view?usp=drive_link'
+href='https://drive.google.com/file/d/10goICR0MSheO5KzKC3cJrzFS1Oj-hsAI/view?usp=drive_link'
 target='_blank'
 rel='noopener noreferrer'
 className='inline-block bg-fuchsia-700 text-white font-semibold px-6 py-3 rounded-lg shadow-lg hover:bg-fuchsia-800 transition-colors duration-300'>
@@ -57,7 +58,7 @@ scale={1.05}
 transitionSpeed={1000}
 gyroscope={true}
 >
-<img src={profile} alt='Koshal' className='w-80 h-80 rounded-full object-cover mb-4 drop-shadow-[0_10px_20px_rgba(255,0,255,0.5)] border border-fuchsia-600'/>
+<img src={Me2} alt='Koshal' className='w-80 h-80 rounded-full object-cover mb-4 drop-shadow-[0_10px_20px_rgba(255,0,255,0.5)] border border-fuchsia-600'/>
 </Tilt>
 </div>
  </div>
