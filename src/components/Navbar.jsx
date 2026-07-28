@@ -9,17 +9,31 @@ const Navbar = () => {
   const [active, setActive] = useState("");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+useEffect(() => {
+  const handleScroll = () => {
+    setIsScrolled(window.scrollY > 50);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
+    const sections = menuItems.map((item) =>
+      document.getElementById(item.id)
+    );
 
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    }
-  }, [])
+    sections.forEach((section) => {
+      if (!section) return;
+
+      const rect = section.getBoundingClientRect();
+
+      if (rect.top <= 120 && rect.bottom >= 120) {
+        setActive(section.id);
+      }
+    });
+  };
+
+  window.addEventListener("scroll", handleScroll);
+
+  handleScroll(); // Set active on page load
+
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
 
 
   const handlleMenuItemClick = (sectionid) => {
@@ -56,22 +70,22 @@ const Navbar = () => {
           { /* Desktop Menu */}
           <ul className='hidden md:flex '>
             {menuItems.map((item) => (
-              <li key={item.id} className=' inline-block px-3 cursor-pointer font-medium text-sm hover:text-fuchsia-700 duration-300'>
+              <li key={item.id} className={`inline-block px-3 cursor-pointer font-semibold  text-sm hover:text-fuchsia-700 duration-300 ${active === item.id ? "text-fuchsia-700 " : "text-gray-600"}`}>
                 <button onClick={() => handlleMenuItemClick(item.id)}>{item.label}</button></li>
             ))}
           </ul>
           <div className='hidden md:flex space-x-4'>
-            <a href="https://github.com/Koshal765"
+            <a href="https://github.com/Koshal-Pothare"
               target='_blank'
               rel=' noopener noreferrer'
-              className='text-gray-300 hover:text-fuchsia-800 duration-300 text-2xl'>
+              className='text-gray-300 hover:text-fuchsia-800  transition-all duration-300 text-2xl'>
               <FaGithub size={24} />
             </a>
 
             <a href="https://www.linkedin.com/in/koshal-pothare-b63806388/"
               target='_blank'
               rel=' noopener noreferrer'
-              className='text-gray-300 hover:text-fuchsia-800 duration-300 text-2xl'>
+              className='text-gray-300 hover:text-blue-500 hover:shadow-[0_0_30px_rgba(96,165,250,0.45)] transition-all  duration-300 text-2xl'>
               <FaLinkedin size={24} />
             </a>
           </div>
@@ -91,14 +105,16 @@ const Navbar = () => {
         </div>
         { /* Mobile Menu */}
         {isMenuOpen && (
-          <div className='absolute top-16 left-1/2 transform -translate-x-1/2 w-4/5 bg-opacity-50  backdrop-filter backdrop-blur-2xl  z-50 border border-gray-700 rounded-b-2xl shadow-lg shadow-fuchsia-500/50 '>
+          <div className='absolute top-18 left-1/2 transform -translate-x-1/2 w-full bg-opacity-50 bg-gradient-to-b from-purple-800 to-cyan-800 backdrop-blur-3xl  z-50 border border-gray-700 rounded-b-2xl shadow-lg shadow-fuchsia-500/50 '>
             <ul className='flex flex-col  items-center space-y-4 text-gray-300 py-4 '>
               {menuItems.map((item) => (
                 <li key={item.id} className={`cursor-pointer hover:text-white ${active === item.id ? "text-fuchsia-700" : ""}`}>
                   <button onClick={() => handlleMenuItemClick(item.id)}>{item.label}</button>
                 </li>
               ))}
-              <div className='flex space-x-6 '>
+             
+            </ul>
+             <div className='flex space-x-6 mb-4 justify-center'>
                 <a href="https://github.com/Koshal765"
                   target='_blank'
                   rel=' noopener noreferrer'
@@ -109,12 +125,11 @@ const Navbar = () => {
                 <a href="https://github.com/Koshal765"
                   target='_blank'
                   rel=' noopener noreferrer'
-                  className='text-gray-300text-2xl'>
+                  className='text-gray-300 text-2xl '>
                   <FaLinkedin size={24} />
                 </a>
               </div>
 
-            </ul>
           </div>
         )}
       </nav>

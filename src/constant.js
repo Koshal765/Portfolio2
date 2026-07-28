@@ -12,7 +12,7 @@ import tailwindcssLogo from './assets/tech_logo/tailwindcss.png';
 import bootstrapLogo from './assets/tech_logo/bootstrap.png';
 import springbootLogo from './assets/tech_logo/springboot.png';
 import nodejsLogo from './assets/tech_logo/nodejs.png';
-// import expressjsLogo from './assets/tech_logo/express.png';
+import express from './assets/tech_logo/express.png';
 import mysqlLogo from './assets/tech_logo/mysql.png';
 import mongodbLogo from './assets/tech_logo/mongodb.png';
 // import firebaseLogo from 'src/assets/tech_logo/firebase.png';
@@ -21,7 +21,7 @@ import cppLogo from './assets/tech_logo/cpp.png';
 import javaLogo from './assets/tech_logo/java.png';
 import pythonLogo from './assets/tech_logo/python.png';
 // import typescriptLogo from './assets/tech_logo/typescript.png';
-// import gitLogo from './assets/tech_logo/git.png';
+ import git from './assets/tech_logo/git.png';
 import githubLogo from './assets/tech_logo/github.png';
 import vscodeLogo from './assets/tech_logo/vscode.png';
 // import postmanLogo from './assets/tech_logo/postman.png';
@@ -36,6 +36,7 @@ import Appt from './assets/Projects/Appt.png';
 import ShayariSagar from './assets/Projects/ShayariSagar.png';
 import Curr from './assets/Projects/Curr.png';
 import WSB from  './assets/Projects/WSB.png';
+import Laundry from './assets/Projects/Laundry.png'
 
 import itvedant from './assets/education/itvedant.png';
 import rtmnu from './assets/education/rtmnu.jpeg';
@@ -52,12 +53,12 @@ export const SkillsInfo = [
      
       { name: 'JavaScript', logo: javascriptLogo },
       { name: 'React JS', logo: reactjsLogo },
-      { name: 'Angular', logo: angularLogo },
+      // { name: 'Angular', logo: angularLogo },
 
-      { name: 'Next JS', logo: nextjsLogo },
+      // { name: 'Next JS', logo: nextjsLogo },
       { name: 'Tailwind CSS', logo: tailwindcssLogo },
     
-      { name: 'Bootstrap', logo: bootstrapLogo },
+      // { name: 'Bootstrap', logo: bootstrapLogo },
     ],
   },
   {
@@ -65,7 +66,7 @@ export const SkillsInfo = [
     skills: [
       { name: 'Springboot', logo: springbootLogo },
       { name: 'Node JS', logo: nodejsLogo },
-      // { name: 'Express JS', logo: expressjsLogo },
+      { name: 'Express JS', logo: express },
       { name: 'MySQL', logo: mysqlLogo },
       { name: 'MongoDB', logo: mongodbLogo },
    
@@ -86,7 +87,7 @@ export const SkillsInfo = [
   {
     title: 'Tools',
     skills: [
-      // { name: 'Git', logo: gitLogo },
+      { name: 'Git', logo: git },
       { name: 'GitHub', logo: githubLogo },
       { name: 'VS Code', logo: vscodeLogo },
     
@@ -98,47 +99,116 @@ export const SkillsInfo = [
   },
 ];
 
+
 export const ProjectsInfo = [
   {
-    id:0,
-    name: 'Appointment Scheduler',
-    description: 'A web application that allows users to schedule and manage appointments efficiently with features like calendar integration and email reminders.',
+    id: 0,
+    name: "Appointment Scheduler",
+    description:
+      "A web application that allows users to schedule and manage appointments efficiently with features like calendar integration and email reminders.",
     image: Appt,
-    githubLink: 'https://github.com/Koshal765/appointment',
-    liveLink: 'https://appointment-jet.vercel.app/',
-    technologies: ['React JS', 'Tailwind', 'localStorage'],
+    githubLink: "https://github.com/Koshal765/appointment",
+    liveLink: "https://appointment-jet.vercel.app/",
+    technologies: ["JavaScript","React JS", "TailwindCSS", "LocalStorage"],
+    team: "Self Project",
+
+    theme: {
+      border: "border-emerald-500/40",
+      shadow: "hover:shadow-[0_0_40px_rgba(16,185,129,.35)]",
+      badge: "bg-emerald-500/20 text-emerald-300",
+      title: "text-emerald-300",
+      gradient: "from-emerald-500 to-cyan-500",
+      glow: "bg-emerald-500/20",
     },
-    {
-       id:1,
-    name: 'WildSprout Beauty',
-    description: 'WildSprout Beauty is a modern skincare website showcasing a curated range of natural products, including face packs, toners, and lip balms. The platform highlights each product with elegant visuals and essential details, offering users a smooth and engaging browsing experience.',
+  },
+
+  {
+    id: 1,
+    name: "WildSprout Beauty",
+    description:
+      "WildSprout Beauty is a modern skincare website showcasing a curated range of natural products.",
     image: WSB,
-    githubLink: 'https://github.com/Koshal765/WidSprout-Beauty',
-    liveLink: 'https://wild-sprout-beauty.vercel.app/',
-    technologies: ['React JS', 'Tailwind', 'Mock API' ],
+    githubLink: "https://github.com/Koshal765/WidSprout-Beauty",
+    liveLink: "https://wild-sprout-beauty.vercel.app/",
+    technologies: [ "React JS","Tailwind", "REST API", "JavaScript", "Spring Boot", "MySQL",  "JWT" ],
+team: "Self Project",
+    theme: {
+      border: "border-amber-500/40",
+      shadow: "hover:shadow-[0_0_40px_rgba(245,158,11,.35)]",
+      badge: "bg-amber-500/20 text-amber-300",
+      title: "text-amber-300",
+      gradient: "from-amber-400 to-orange-500",
+      glow: "bg-amber-500/20",
     },
+  },
+   {
+  id: 2,
+  name: "ATHLaundry",
+  description: "A full-stack laundry service web app for scheduling pickups, placing orders, secure online payments, and real-time order tracking with an admin dashboard.",
+  image: Laundry,
+  githubLink: "https://github.com/Ayush110704/AthLaundary",
+  liveLink: "https://ath-laundary.vercel.app/",
+  technologies: ["React JS", "Tailwind CSS", "Node.js", "Express.js",  "JWT", "REST API", "Razorpay","MongoDB"],
+  team: "Team Project",
+  theme: {
+    border: "border-cyan-500/40",
+    shadow: "hover:shadow-[0_0_45px_rgba(6,182,212,.35)]",
+    badge: "bg-cyan-500/20 text-cyan-300",
+    title: "text-cyan-300",
+    gradient: "from-cyan-500 via-sky-500 to-blue-600",
+    glow: "bg-cyan-500",
+  },
+},
 
-    {
-        id:2,
-    name: 'Shyayri Sagar',
-    description: 'A poetry website that offers a vast collection of Shayari in various categories, allowing users to read, share, and express their emotions through words.',
+  {
+    id: 3,
+    name: "Shayari Sagar",
+    description:
+      "A poetry website that offers a vast collection of Shayari in various categories. Where user can read ,save and also share the shayari",
+
     image: ShayariSagar,
-    githubLink: 'https://github.com/Koshal765/Shayari-Sagar',
-    liveLink: 'https://shayari-sagar.vercel.app/',
-    technologies: ['HTML', 'CSS', 'JavaScript', 'API'],
-    },
-    {
-        id:3,
-    name: 'Currency Converter',
-    description: 'A web application that enables users to convert currencies in real-time, providing accurate exchange rates and a user-friendly interface for seamless transactions.',
-    image: Curr,
-    githubLink: 'https://github.com/Koshal765/currency-Converter',
-    liveLink: 'https://currency-converter-lilac-beta.vercel.app/',
-    technologies: ['HTML', 'CSS', 'JavaScript', 'API'],
-    },
-    
 
-]
+    githubLink: "https://github.com/Koshal765/Shayari-Sagar",
+
+    liveLink: "https://shayari-sagar.vercel.app/",
+
+    technologies: ["HTML", "CSS", "JavaScript", "API" , "LocalStorage"],
+team: "Self Project",
+    theme: {
+      border: "border-fuchsia-500/40",
+      shadow: "hover:shadow-[0_0_40px_rgba(217,70,239,.35)]",
+      badge: "bg-fuchsia-500/20 text-fuchsia-300",
+      title: "text-fuchsia-300",
+      gradient: "from-fuchsia-500 to-violet-500",
+      glow: "bg-fuchsia-500/20",
+    },
+  },
+
+  {
+    id: 4,
+    name: "Currency Converter",
+    description:
+      "A web application that enables users to convert currencies in real time.",
+
+    image: Curr,
+
+    githubLink: "https://github.com/Koshal765/currency-Converter",
+
+    liveLink: "https://currency-converter-lilac-beta.vercel.app/",
+
+    technologies: ["HTML", "CSS", "JavaScript", "API"],
+team: "Self Project",
+    theme: {
+      border: "border-sky-500/40",
+      shadow: "hover:shadow-[0_0_40px_rgba(59,130,246,.35)]",
+      badge: "bg-sky-500/20 text-sky-300",
+      title: "text-sky-300",
+      gradient: "from-sky-500 to-blue-600",
+      glow: "bg-sky-500/20",
+    },
+  },
+ 
+];
 
 export const EducationInfo = [
   {
@@ -173,8 +243,21 @@ export const EducationInfo = [
       school:'Gandhi City Public School',
       date:'Passed in year 2020',
       desc:'Completed my 10th(CBSE Board) from this school.'
-    }
+    },
+
+   
 ];
+
+export const HeroSectionLogo =[
+         { name: 'HTML', logo: htmlLogo },
+      { name: 'CSS', logo: cssLogo },
+     { name: 'React JS', logo: reactjsLogo },
+      { name: 'JavaScript', logo: javascriptLogo },
+      
+       { name: 'Tailwind CSS', logo: tailwindcssLogo },
+         { name: 'Springboot', logo: springbootLogo },
+      { name: 'Node JS', logo: nodejsLogo },
+]
 
 
     

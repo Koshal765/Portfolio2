@@ -1,51 +1,170 @@
-import React from 'react'
-import { SkillsInfo } from '../constant'
-import Tilt from 'react-parallax-tilt';
+
+import React from "react";
+import { SkillsInfo } from "../constant";
+import Tilt from "react-parallax-tilt";
+import { motion } from "framer-motion";
+import { Laptop2, Database, Code2, Wrench, } from "lucide-react";
 
 const Skills = () => {
+  const colors = [
+    {
+      border: "border-violet-500/40",
+      glow: "shadow-[0_0_40px_rgba(168,85,247,.18)]",
+      title: "text-violet-400",
+      bg: "bg-violet-500/10",
+      icon: <Laptop2 size={24} className="text-violet-400" />,
+    },
+
+    {
+      border: "border-green-500/40",
+      glow: "shadow-[0_0_40px_rgba(34,197,94,.18)]",
+      title: "text-green-400",
+      bg: "bg-green-500/10",
+      icon: <Database size={24} className="text-green-400" />,
+    },
+
+    {
+      border: "border-blue-500/40",
+      glow: "shadow-[0_0_40px_rgba(59,130,246,.18)]",
+      title: "text-blue-400",
+      bg: "bg-blue-500/10",
+      icon: <Code2 size={24} className="text-blue-400" />,
+    },
+
+    {
+      border: "border-pink-500/40",
+      glow: "shadow-[0_0_40px_rgba(236,72,153,.18)]",
+      title: "text-pink-400",
+      bg: "bg-pink-500/10",
+      icon: <Wrench size={24} className="text-pink-400" />,
+    },
+  ];
+
   return (
-  <section id="skills" className='py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[20vw] font-sans mt-16 md:mt-24 lh:my-32'>
+    <section
+      id="skills"
+      className="relative overflow-hidden bg-[#060814] py-28"
+    >
+      {/* Background Glow */}
 
-{/* section title */}
-<div className='text-center mb-8'>
-  <h2 className='text-3x sm:text-4xl font-bold text-white'>SKILLS</h2>
-  <div className='w-24 h-1 bg-fuchsia-900 mx-auto mt-2'>
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute left-20 top-10 h-80 w-80 rounded-full bg-violet-600/10 blur-[140px]" />
+        <div className="absolute right-20 bottom-0 h-80 w-80 rounded-full bg-cyan-500/10 blur-[180px]" />
+        <div className="absolute left-1/2 top-1/2 h-60 w-60 -translate-x-1/2 -translate-y-1/2 rounded-full bg-indigo-500/10 blur-[120px]" />
 
-  </div>
-  <p className='text-gray-400 mt-4 text-lg font-semibold '>The collection of my technical skills and expertise honed through various projects</p>
-</div>
+      </div>
 
-{/* skills categories */}
-<div className='flex flex-wrap gap-1 lg:gap-5 py-10 justify-between'>
-  {SkillsInfo.map((category) => (
-    <div key={category.title} className='bg-gray-900 backdrop-blur-md px-6 sm:px-10 py-8 sm:py-6 mb-10 w-full sm:w-[48%] rounded-2xl border border-white shadow-[0_0_20px_1px_rgba(130,69,236,0.3)]'> 
-    <h3 className='text-2xl sm:text-3xdl font-semibold text-gray-400 mb-4 text-center'>{category.title}</h3>
+      {/* Container */}
 
-    {/* skills item */}
-    <Tilt 
+      <div className="mx-auto max-w-7xl px-6">
 
-tiltAngleX={20}
-tiltMaxAngleY={20}
-perspective={1000}
-scale={1.05} 
-transitionSpeed={1000}
-gyroscope={true}
->
-    <div className='grid grid-cols-2 sm:grid-cols-3 gap-x-8 gap-y-4 w-full'>
-      {category.skills.map((skills) => (
-        <div
-        key={skills.name} className='flex items-center justify-center space-x-2 bg-transparent border-2 border-gray-700 rounded-3xl py-2 px-3 min-w-[100px] sm:min-w-[120px] mx-auto '>
-<img src={skills.logo} alt={`${skills.name} logo `} className='w-6 h-6 sm:w-8 sm:h-8 object-contain'/>
-<span className='text-xs sm:text-sm text-gray-300 text-center break-words'>{skills.name}</span>
+        {/* Heading */}
+
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: .6 }}
+          className="mb-20 text-center"
+        >
+          <p className="mb-2 uppercase tracking-[5px] text-violet-400 font-semibold"> SKILLS  </p>
+
+          <h2 className="text-5xl font-bold text-white"> Technologies I Work With </h2>
+
+          <p className="mx-auto mt-5 max-w-2xl text-slate-400">
+            My favourite technologies that I use to build modern,
+            scalable and user-friendly web applications.
+          </p>
+        </motion.div>
+
+        {/* Cards */}
+
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 xl:grid-cols-4">
+
+          {SkillsInfo.map((category, index) => (
+
+            <Tilt
+              key={category.title}
+              tiltMaxAngleX={8}
+              tiltMaxAngleY={8}
+              perspective={1200}
+              transitionSpeed={1500}
+              scale={1.03}
+              glareEnable={true}
+              glareMaxOpacity={0.12}
+            >
+
+              <motion.div
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                whileHover={{ y: -8 }}
+                transition={{ duration: .4 }}
+                viewport={{ once: true }}
+                className={` relative  overflow-hidden  rounded-3xl  border  ${colors[index].border}  ${colors[index].glow}  bg-[#0B1220]/80 p-7 duration-300
+                `}
+              >
+
+                {/* Gradient Glow */}
+
+                <div
+                  className={`absolute -top-24 right-0 h-44 w-44 rounded-full ${colors[index].bg} blur-[80px]`}
+                />
+
+                {/* Header */}
+                <div className="relative z-10 flex items-center gap-4 mb-8">
+                  <div className={`flex h-12 w-12 items-center justify-center rounded-xl ${colors[index].bg}`}>
+                    {colors[index].icon}
+                  </div>
+
+                  <h3 className={`text-xl font-semibold ${colors[index].title}`} > {category.title} </h3>
+
+                </div>
+
+                {/* Skills List */}
+
+                <div className="relative z-10 space-y-4">
+                  {category.skills.map((skill, skillIndex) => (
+                    <motion.div
+                      key={skill.name}
+                      initial={{ opacity: 0, x: -20 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      transition={{
+                        duration: 0.3,
+                        delay: skillIndex * 0.05,
+                      }}
+                      whileHover={{
+                        x: 8,
+                        transition: { duration: 0.2 },
+                      }}
+                      className=" group  flex  items-center  gap-4  rounded-xl  p-2 transition-all  duration-300 hover:border-white/20 hover:bg-white/[0.06] " >
+                      <div className="flex items-center justify-center rounded-lg bg-white/5 transition-all duration-300 group-hover:scale-110">
+                        <img
+                          src={skill.logo}
+                          alt={skill.name}
+                          className="h-6 w-6 object-contain"
+                        />
+                      </div>
+
+                      <span className="font-medium text-slate-300 transition-colors duration-300 group-hover:text-white">
+                        {skill.name}
+                      </span>
+                    </motion.div>
+                  ))}
+                </div>
+
+                {/* Bottom Glow */}
+
+                <div  className={`  absolute bottom-0 left-0 h-1  w-full  ${colors[index].bg} opacity-70 `} />
+
+              </motion.div>
+            </Tilt>
+
+          ))}
+
         </div>
-      ))}
-    </div>
-    </Tilt>
-    </div>
-  ))}
-</div>
-  </section>
-  )
-}
+      </div>
+    </section>
+  );
+};
 
-export default Skills
+export default Skills;
