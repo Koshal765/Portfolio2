@@ -251,7 +251,9 @@ linear-gradient(to bottom,#fff 1px,transparent 1px)
 
     </section>
 
-<section className="block md:hidden bg-[#060814] py-20 px-6">
+<section 
+ id="experience"
+className="block md:hidden bg-[#060814] py-20 px-6">
 
   <motion.div
     initial={{ opacity: 0, y: 50 }}

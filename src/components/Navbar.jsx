@@ -4,6 +4,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FiX } from "react-icons/fi";
 import { Link } from 'react-router';
 import { useState, useEffect } from 'react';
+import {motion, AnimatePresence } from 'framer-motion';
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -106,11 +107,18 @@ useEffect(() => {
 
         </div>
         { /* Mobile Menu */}
+        <AnimatePresence >
         {isMenuOpen && (
-          <div className='absolute top-18 left-1/2 transform -translate-x-1/2 w-full bg-opacity-50 bg-gradient-to-b from-purple-800 to-cyan-800 backdrop-blur-3xl  z-50 border border-gray-700 rounded-b-2xl shadow-lg shadow-fuchsia-500/50 '>
+          <motion.div
+             initial={{ y: -50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: -50, opacity: 0 }}
+              transition={{ duration: 0.3 }}
+          
+          className='absolute top-18 left-1/2 transform -translate-x-1/2 w-full bg-opacity-50 bg-gradient-to-b from-purple-800 to-cyan-800 backdrop-blur-3xl  z-50 border border-gray-700 rounded-b-2xl shadow-lg shadow-fuchsia-500/50 '>
             <ul className='flex flex-col  items-center space-y-4 text-gray-300 py-4 '>
               {menuItems.map((item) => (
-                <li key={item.id} className={`cursor-pointer hover:text-white ${active === item.id ? "text-fuchsia-700" : ""}`}>
+                <li key={item.id} className={`cursor-pointer hover:text-white ${active === item.id ? "text-white" : "text-gray-400"}`}>
                   <button onClick={() => handlleMenuItemClick(item.id)}>{item.label}</button>
                 </li>
               ))}
@@ -132,8 +140,9 @@ useEffect(() => {
                 </a>
               </div>
 
-          </div>
+          </motion.div>
         )}
+        </AnimatePresence>
       </nav>
     </>
   )
