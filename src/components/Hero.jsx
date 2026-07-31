@@ -113,7 +113,7 @@ className="min-h-screen bg-[#070A14] pt-10 bg-[radial-gradient(circle_at_20%_20%
               </motion.h3>
 
               <motion.div
-                className="flex flex-wrap gap-3"
+                className="flex flex-wrap gap-3 justify-center"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.8, duration: 0.5 }}
@@ -147,7 +147,7 @@ className="min-h-screen bg-[#070A14] pt-10 bg-[radial-gradient(circle_at_20%_20%
               
               {/* Avatar container*/}
               <motion.div
-                className="w-64 h-64 md:w-90 md:h-120 rounded-3xl bg-gradient-to-br from-purple-400 to-indigo-600 flex items-center justify-center shadow-2xl shadow-purple-500/30 relative z-10 border-4 border-purple-400/20"
+                className="w-64 h-76 md:w-90 md:h-120 rounded-3xl bg-gradient-to-br from-purple-400 to-indigo-600 flex items-center justify-center shadow-2xl shadow-purple-500/30 relative z-10 border-4 border-purple-400/20"
                 whileHover={{ scale: 1.02 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
@@ -160,7 +160,7 @@ className="min-h-screen bg-[#070A14] pt-10 bg-[radial-gradient(circle_at_20%_20%
               
               {/* Card 1 - Top Left (React) */}
               <motion.div
-                className="absolute top-8 -left-8 bg-gradient-to-br from-cyan-500 to-blue-600 px-4 py-3 rounded-xl shadow-xl shadow-cyan-500/30 z-20 cursor-default"
+                className="absolute top-8 -left-8 bg-gradient-to-br from-cyan-500 to-blue-600 px-3 py-2 md:px-4 md:py-3 rounded-xl shadow-xl shadow-cyan-500/30 z-20 cursor-default"
                 initial={{ opacity: 0, x: -30, y: -20 }}
                 animate={{ opacity: 1, x: 0, y: 0 }}
                 transition={{ delay: 0.6, duration: 0.5 }}
@@ -178,7 +178,7 @@ className="min-h-screen bg-[#070A14] pt-10 bg-[radial-gradient(circle_at_20%_20%
 
               {/* Card 2 - Top Right (UI/UX) */}
               <motion.div
-                className="absolute top-10 -right-16 bg-gradient-to-br from-purple-500 to-pink-600 px-4 py-3 rounded-xl shadow-xl shadow-purple-500/30 z-20 cursor-default"
+                className="absolute top-10 -right-10 md:-right-16 bg-gradient-to-br from-purple-500 to-pink-600 px-3 py-2 md:px-4 md:py-3 rounded-xl shadow-xl shadow-purple-500/30 z-20 cursor-default"
                 initial={{ opacity: 0, x: 30, y: -20 }}
                 animate={{ opacity: 1, x: 0, y: 50 }}
                 transition={{ delay: 0.8, duration: 0.5 }}
@@ -196,7 +196,7 @@ className="min-h-screen bg-[#070A14] pt-10 bg-[radial-gradient(circle_at_20%_20%
 
               {/* Card 3 - Bottom Left (Fast) */}
               <motion.div
-                className="absolute bottom-8 -left-15 bg-gradient-to-br from-orange-500 to-red-600 px-4 py-3 rounded-xl shadow-xl shadow-orange-500/30 z-20 cursor-default"
+                className="absolute bottom-8 -left-15 bg-gradient-to-br from-orange-500 to-red-600 px-3 py-2 md:px-4 md:py-3 rounded-xl shadow-xl shadow-orange-500/30 z-20 cursor-default"
                 initial={{ opacity: 0, x: -30, y: 20 }}
                 animate={{ opacity: 1, x: 0, y: 0 }}
                 transition={{ delay: 1.0, duration: 0.5 }}
@@ -214,7 +214,7 @@ className="min-h-screen bg-[#070A14] pt-10 bg-[radial-gradient(circle_at_20%_20%
 
               {/* Card 4 - Bottom Right (Responsive) */}
               <motion.div
-                className="absolute -bottom-8 -right-8 bg-gradient-to-br from-green-500 to-emerald-600 px-4 py-3 rounded-xl shadow-xl shadow-green-500/30 z-20 cursor-default"
+                className="absolute -bottom-8 -right-10 md:-right-8 bg-gradient-to-br from-green-500 to-emerald-600 px-3 py-2 md:px-4 md:py-3 rounded-xl shadow-xl shadow-green-500/30 z-20 cursor-default"
                 initial={{ opacity: 0, x: 30, y: 20 }}
                 animate={{ opacity: 1, x: 0, y: 0 }}
                 transition={{ delay: 1.2, duration: 0.5 }}

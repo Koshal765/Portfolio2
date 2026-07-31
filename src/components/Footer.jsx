@@ -10,6 +10,7 @@ const Footer = () => {
       id: 'about', label: 'About'
     },
     { id: 'skills', label: 'Skills' },
+    {id:'experience',label:'Experience'},
     { id: 'projects', label: 'Projects' },
     { id: 'education', label: 'Education' },
     { id: 'contact', label: 'Contact' }
@@ -55,7 +56,7 @@ useEffect(() => {
 
 
   return (
-  <section className="w-full bg-[#060814]  py-10">
+  <section className="w-full bg-[#060814]  py-10 ">
     
 
   <motion.h1 
@@ -64,15 +65,15 @@ whileInView={{ opacity: 1, y: 0 }}
 viewport={{ once: true }}
  transition={{ duration: 0.6 }}
   
-  className="text-center font-bold font-serif text-white text-5xl leading-10">Koshal Pothare</motion.h1>
+  className="text-center font-bold font-serif text-white text-4xl md:text-5xl leading-10">Koshal Pothare</motion.h1>
      <motion.div
       initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 ,delay:0.4 }}
      
-     className="w-full flex justify-center mt-5">
-        <ul className='hidden md:flex '>
+     className="w-full hidden md:flex justify-center mt-5 ">
+        <ul className=''>
             {menuItems.map((item) => (
               <li key={item.id} className={`inline-block px-3 cursor-pointer font-semibold  text-sm hover:text-fuchsia-700 duration-300 ${active === item.id ? "text-fuchsia-700 " : "text-gray-600"}`}>
                 <button onClick={() => handlleMenuItemClick(item.id)}>{item.label}</button></li>

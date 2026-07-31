@@ -69,7 +69,7 @@ const Skills = () => {
         >
           <p className="mb-2 uppercase tracking-[5px] text-violet-400 font-semibold"> SKILLS  </p>
 
-          <h2 className="text-5xl font-bold text-white"> Technologies I Work With </h2>
+          <h2 className=" text-4xl md:text-5xl font-bold text-white"> Technologies I Work With </h2>
 
           <p className="mx-auto mt-5 max-w-2xl text-slate-400">
             My favourite technologies that I use to build modern,

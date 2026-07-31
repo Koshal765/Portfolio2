@@ -29,7 +29,7 @@ const Projects = () => {
           className="mb-20 text-center"
         >
       <p className="mb-2 uppercase tracking-[5px] text-violet-400 font-semibold"> PROJECTS </p>
-    <h2 className="text-5xl font-bold text-white"> Things I have built so far </h2>
+    <h2 className=" text-4xl md:text-5xl font-bold text-white"> Things I have built so far </h2>
     <p className="mx-auto mt-5 max-w-2xl text-slate-400">A showcase of the Projects I have worked on, highlighting my skills and experience in various technologies</p>
 </motion.div>
 

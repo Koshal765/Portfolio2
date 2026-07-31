@@ -126,7 +126,7 @@ const Education = () => {
           {EducationInfo.map((edu, index) => (
             <div
               key={edu.id}
-              className={`relative flex items-center ${index % 2 === 0 ? "md:justify-start" : "md:justify-end"
+              className={`relative flex justify-center md:items-center ${index % 2 === 0 ? "md:justify-start" : "md:justify-end"
                 }`}
             >
               {/* timeline Node */}
@@ -139,7 +139,7 @@ const Education = () => {
                 viewport={{ amount: 0.6 }}
                 transition={{ duration: 0.4 }}
                 whileHover={{ scale: 1.15 }}
-                className="absolute left-0 md:left-1/2 -translate-x-1/2 z-20"
+                className="absolute left-0 md:left-1/2 -translate-x-1/2 z-20 hidden md:flex"
               >
                 <div className="relative flex items-center justify-center w-16 h-16 rounded-full border-4 border-purple-500 bg-[#0F172A] shadow-[0_0_40px_rgba(168,85,247,.45)]">
 
@@ -163,8 +163,9 @@ const Education = () => {
                   rotateY: index % 2 === 0 ? 4 : -4,
                   transition: { duration: 0.35 },
                 }}
-                className={`group relative w-full md:w-[44%] ml-10 md:ml-0 ${index % 2 === 0 ? "md:mr-auto" : "md:ml-auto"
-                  }`}
+                className={`group relative w-full max-w-md mx-auto md:max-w-none md:w-[44%] md:mx-0 ${
+  index % 2 === 0 ? "md:mr-auto" : "md:ml-auto"
+}`}
               >
 
                 {/* card glow */}
@@ -239,7 +240,7 @@ const Education = () => {
         className="absolute bottom-20 right-20 w-72 h-72 rounded-full bg-cyan-500/10 blur-[150px] pointer-events-none"
       />
 
-      {/* Decorative Grid */}
+      {/* background grid */}
       <div
         className="absolute inset-0 opacity-[0.03] pointer-events-none"
         style={{

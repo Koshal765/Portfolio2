@@ -37,7 +37,7 @@ const sendEmail = (e) => {
   return (
 <section
   id="contact"
-  className="relative overflow-hidden bg-[#060814] py-28"
+  className="relative overflow-hidden bg-[#060814] py-10 md:py-28"
 >
   {/* Background Glow */}
 
@@ -53,7 +53,7 @@ const sendEmail = (e) => {
     <div className="text-center mb-16">
       <p className="uppercase tracking-[5px] text-violet-400 font-semibold">  CONTACT   </p>
 
-      <h2 className="mt-3 text-5xl font-bold text-white">Let's Connect </h2>
+      <h2 className="mt-3 text-4xl md:text-5xl font-bold text-white">Let's Connect </h2>
 
       <p className="mt-5 text-slate-400 max-w-2xl mx-auto">  Have an idea, project or opportunity? I'd love to hear from you. </p>
 
