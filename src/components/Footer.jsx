@@ -102,7 +102,7 @@ viewport={{ once: true }}
           </a>
 
           <a
-            href="https://www.instagram.com/newcoder7?igsh=MTlqODIyNTFxbGZ1NQ==" target="_blank"
+            href="https://www.instagram.com/ksh_codes/" target="_blank"
             className="w-12 h-12 rounded-full  flex items-center justify-center hover:bg-pink-600 transition"
           >
             <FaInstagram size={20} className="text-white " />

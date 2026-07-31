@@ -136,7 +136,7 @@ const sendEmail = (e) => {
           </a>
 
           <a
-            href="https://www.instagram.com/newcoder7?igsh=MTlqODIyNTFxbGZ1NQ==" target="_blank"
+            href="https://www.instagram.com/ksh_codes/" target="_blank"
             className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-pink-600 transition"
           >
             <FaInstagram size={20} className="text-white" />
