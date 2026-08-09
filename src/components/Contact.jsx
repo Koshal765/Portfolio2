@@ -160,7 +160,7 @@ const sendEmail = (e) => {
             <div className="relative">
               <User size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-500"/>
 
-              <input type="text"  name="user_name" placeholder="Your Name" required
+              <input type="text"  name="name" placeholder="Your Name" required
                 className=" w-full rounded-xl border border-white/10 bg-[#121A2C] py-4 pl-12 pr-4 text-white outline-none transition focus:border-violet-500 focus:ring-2
                  focus:ring-violet-500/20 " />
 
@@ -172,7 +172,7 @@ const sendEmail = (e) => {
 
               <Mail size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-500" />
 
-              <input  type="email"  name="user_email" placeholder="Your Email"  required
+              <input  type="email"  name="email" placeholder="Your Email"  required
                 className=" w-full rounded-xl border border-white/10 bg-[#121A2C] py-4 pl-12 pr-4 text-white outline-none transition
                 focus:border-violet-500 focus:ring-2 focus:ring-violet-500/20 "/>
 
@@ -203,11 +203,11 @@ const sendEmail = (e) => {
           {/* Button */}
 
           <button type="submit"
-            className=" group relative flex w-full items-center justify-center gap-3 overflow-hidden rounded-xl bg-gradient-to-r from-violet-600 via-fuchsia-500
-            to-blue-600 py-4 text-lg font-semibold text-whitetransition-allduration-300 hover:scale-[1.02]hover:shadow-[0_0_35px_rgba(124,58,237,.45)] active:scale-95" >
-            <Send size={18} className="transition-transform duration-300 group-hover:translate-x-1" />
+            className={`group relative flex w-full items-center justify-center gap-3 overflow-hidden rounded-xl bg-gradient-to-r from-violet-600 via-fuchsia-500
+            to-blue-600 py-4 text-lg font-semibold text-whitetransition-allduration-300 hover:scale-[1.02]hover:shadow-[0_0_35px_rgba(124,58,237,.45)] active:scale-95${loading? "disabled" : ""}`} >
+            <Send size={18} className="transition-transform duration-300 group-hover:translate-x-1 "/>
 
-            Send Message
+            {loading ? "Sending..." : "Send Message"}
           </button>
 
         </form>
