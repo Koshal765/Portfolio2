@@ -195,12 +195,16 @@ linear-gradient(to bottom,#fff 1px,transparent 1px)
      
      > <ExternalLink size={20} className="text-blue-500"/></a>
      </div>
+               
+             <div className=" flex items-center gap-5">
+      <p className="mt-2 text-slate-400">
+        May 2026 - Aug 2026
+      </p>
+      <a className="text-xs  mt-2 px-3 py-1 rounded-full border border-violet-500/20 bg-violet-500/10 text-gray-400 transition-all hover:scale-105 " 
+      href="https://drive.google.com/file/d/12A9-CVyF093dypXRp8Y1cvHH7y0I76dB/view?usp=sharing" target="_blank">Certificate</a>
+      </div>
 
-              <p className="mt-3 text-slate-400">
-                May 2026 - Present
-              </p>
-
-              <div className="my-8 h-px bg-gradient-to-r from-violet-500/30 via-white/10 to-cyan-500/30" />
+              <div className="my-5 h-px bg-gradient-to-r from-violet-500/30 via-white/10 to-cyan-500/30" />
 
               {/* Description */}
 
@@ -250,6 +254,8 @@ linear-gradient(to bottom,#fff 1px,transparent 1px)
     </div>
 
     </section>
+
+    {/* mobile view */}
 
 <section 
  id="experience"
@@ -323,11 +329,12 @@ className="block md:hidden bg-[#060814] py-20 px-6">
      
      > <ExternalLink size={20} className="text-blue-500"/></a>
      </div>
-<div className="bg-amber-200 flex items-center gap-5">
+<div className=" flex items-center  justify-between mt-5">
       <p className="mt-2 text-slate-400">
         May 2026 - Aug 2026
       </p>
-      <a className="text-sm  " href="/https://drive.google.com/file/d/12A9-CVyF093dypXRp8Y1cvHH7y0I76dB/view?usp=sharing" target="_blank">Certificate</a>
+      <a className="text-xs  mt-2 px-3 py-1 rounded-full border border-violet-500/20 bg-violet-500/10 text-gray-400 transition-all hover:scale-105 " 
+      href="https://drive.google.com/file/d/12A9-CVyF093dypXRp8Y1cvHH7y0I76dB/view?usp=sharing" target="_blank">Certificate</a>
       </div>
 
       </div>
