@@ -323,10 +323,12 @@ className="block md:hidden bg-[#060814] py-20 px-6">
      
      > <ExternalLink size={20} className="text-blue-500"/></a>
      </div>
-
+<div className="bg-amber-200 flex items-center gap-5">
       <p className="mt-2 text-slate-400">
-        May 2026 - Present
+        May 2026 - Aug 2026
       </p>
+      <a className="text-sm  " href="/https://drive.google.com/file/d/12A9-CVyF093dypXRp8Y1cvHH7y0I76dB/view?usp=sharing" target="_blank">Certificate</a>
+      </div>
 
       </div>
 

@@ -79,7 +79,7 @@ className="min-h-screen bg-[#070A14] pt-10 bg-[radial-gradient(circle_at_20%_20%
               transition={{ delay: 0.5, duration: 0.5 }}
             >
               <motion.a
-                href="https://drive.google.com/file/d/1h8apYmo_KyutVLQ4b4g9INnAn2j7HW4j/view?usp=drive_link" target="_blank"
+                href="https://drive.google.com/file/d/1h8apYmo_KyutVLQ4b4g9INnAn2j7HW4j/view?usp=sharing" target="_blank"
                 className="px-8 py-3 bg-gradient-to-r from-[#7C3AED] via-[#8B5CF6] to-[#3B82F6] text-white font-semibold rounded-lg shadow-lg shadow-purple-500/30 hover:shadow-xl hover:shadow-purple-500/50 transition-all duration-300"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.97 }}
