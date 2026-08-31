@@ -37,6 +37,7 @@ import ShayariSagar from './assets/Projects/ShayariSagar.png';
 import Curr from './assets/Projects/Curr.png';
 import WSB from  './assets/Projects/WSB.png';
 import Laundry from './assets/Projects/Laundry.png'
+import Nestesy from './assets/Projects/Nestesy.png'
 
 import itvedant from './assets/education/itvedant.png';
 import rtmnu from './assets/education/rtmnu.jpeg';
@@ -159,9 +160,36 @@ team: "Self Project",
     glow: "bg-cyan-500",
   },
 },
+{
+  id: 3,
+  name: "Nestesy",
+  description:
+    "A full-stack property rental platform where tenants can explore properties, schedule visits, manage bookings, and save favorites, while hosts manage listings and visits through a dedicated dashboard and admins oversee users, properties, bookings, and platform analytics.",
+  image: Nestesy,
+  githubLink: "https://github.com/Koshal-Pothare/Nestesy",
+  liveLink: "https://nestesy.vercel.app/",
+  technologies: [
+    "React JS",
+    "Tailwind CSS",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "JWT",
+    "REST API"
+  ],
+  team: "Team Project",
+  theme: {
+    border: "border-emerald-500/40",
+    shadow: "hover:shadow-[0_0_45px_rgba(16,185,129,.35)]",
+    badge: "bg-emerald-500/20 text-emerald-300",
+    title: "text-emerald-300",
+    gradient: "from-emerald-500 via-green-500 to-teal-600",
+    glow: "bg-emerald-500",
+  },
+},
 
   {
-    id: 3,
+    id: 4,
     name: "Shayari Sagar",
     description:
       "A poetry website that offers a vast collection of Shayari in various categories. Where user can read ,save and also share the shayari",
@@ -185,7 +213,7 @@ team: "Self Project",
   },
 
   {
-    id: 4,
+    id: 5,
     name: "Currency Converter",
     description:
       "A web application that enables users to convert currencies in real time.",
